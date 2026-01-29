@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Online Web Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="css/product-detail-style.css">
+</head>
+
+<body>
+
+    <section id="header">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            
+            <div id="navbar">
+                <ul id="navilist">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="shop.html ">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+
+    <section id="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="index.html">Shop</a>
+            <span>/</span>
+            <span class="current" id="breadcrumb-product">Product</span>
+        </div>
+    </section>
+
+    <section id="product-detail" class="section-p1">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="img/products/f1.jpg" alt="Product Image" id="MainImg">
+                    <div class="image-badges">
+                        <span class="badge new">New</span>
+                        <span class="badge sale">Sale</span>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="product-info">
+                <h6 class="product-category" id="product-brand">Brand</h6>
+                <h2 class="product-title" id="product-name">Product Name</h2>
+                
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-count">(128 Reviews)</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price" id="product-price">$60.00</span>
+                    <span class="original-price" id="original-price">$85.00</span>
+                    <span class="discount">-29% OFF</span>
+                </div>
+
+                <div class="product-description">
+                    <p>Experience ultimate comfort and style with this amazing product. Made from premium quality materials, this item features unique designs that add a special touch to your wardrobe. Perfect for casual outings, weekend adventures, or relaxed office days.</p>
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label>Select Size:</label>
+                        <div class="size-options">
+                            <input type="radio" name="size" id="size-xs" value="XS">
+                            <label for="size-xs" class="size-btn">XS</label>
+
+                            <input type="radio" name="size" id="size-s" value="S">
+                            <label for="size-s" class="size-btn">S</label>
+
+                            <input type="radio" name="size" id="size-m" value="M" checked>
+                            <label for="size-m" class="size-btn">M</label>
+
+                            <input type="radio" name="size" id="size-l" value="L">
+                            <label for="size-l" class="size-btn">L</label>
+
+                            <input type="radio" name="size" id="size-xl" value="XL">
+                            <label for="size-xl" class="size-btn">XL</label>
+
+                            <input type="radio" name="size" id="size-xxl" value="XXL">
+                            <label for="size-xxl" class="size-btn">XXL</label>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>Select Color:</label>
+                        <div class="color-options">
+                            <input type="radio" name="color" id="color-1" value="blue" checked>
+                            <label for="color-1" class="color-btn" style="background: #4285F4;"></label>
+
+                            <input type="radio" name="color" id="color-2" value="red">
+                            <label for="color-2" class="color-btn" style="background: #EA4335;"></label>
+
+                            <input type="radio" name="color" id="color-3" value="green">
+                            <label for="color-3" class="color-btn" style="background: #34A853;"></label>
+
+                            <input type="radio" name="color" id="color-4" value="yellow">
+                            <label for="color-4" class="color-btn" style="background: #FBBC04;"></label>
+
+                            <input type="radio" name="color" id="color-5" value="black">
+                            <label for="color-5" class="color-btn" style="background: #000000;"></label>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>Quantity:</label>
+                        <div class="quantity-selector">
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn-primary" onclick="addToCartFromDetail()">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                    
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">SKU:</span>
+                        <span class="meta-value" id="product-sku">SKU-12345</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Category:</span>
+                        <span class="meta-value">Shirts, Casual Wear</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tags:</span>
+                        <span class="meta-value">Cotton, Stylish, Summer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Share:</span>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <h5>Free Shipping</h5>
+                            <p>On orders over $50</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-undo"></i>
+                        <div>
+                            <h5>Easy Returns</h5>
+                            <p>30-day return policy</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h5>Secure Payment</h5>
+                            <p>100% secure checkout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="related-products" class="section-p1">
+        <h2>Related Products</h2>
+        <p class="section-subtitle">You might also like these items</p>
+        
+        <div class="related-grid">
+            <div class="related-product">
+                <div class="related-image">
+                    <img src="img/products/f2.jpg" alt="Related Product">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="related-info">
+                    <span class="brand">Tom Ford</span>
+                    <h4>Classic Floral Style Shirt</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">$72</h4>
+                </div>
+                <a href="product-detail.html?id=2&name=Classic Floral Style Shirt&brand=tom ford&price=72&img=f2.jpg" class="cart-icon"><i class="fas fa-eye"></i></a>
+            </div>
+
+            <div class="related-product">
+                <div class="related-image">
+                    <img src="img/products/f3.jpg" alt="Related Product">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="related-info">
+                    <span class="brand">Hardy Boy</span>
+                    <h4>Classic Jungle Style Shirt</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4 class="price">$55</h4>
+                </div>
+                <a href="product-detail.html?id=3&name=Classic Jungle Style Shirt&brand=hardy boy&price=55&img=f3.jpg" class="cart-icon"><i class="fas fa-eye"></i></a>
+            </div>
+
+            <div class="related-product">
+                <div class="related-image">
+                    <img src="img/products/f4.jpg" alt="Related Product">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="related-info">
+                    <span class="brand">Hugo Boss</span>
+                    <h4>Vintage Floral Style Shirt</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">$72</h4>
+                </div>
+                <a href="product-detail.html?id=4&name=Vintage Floral Style Shirt&brand=hugo boss&price=72&img=f4.jpg" class="cart-icon"><i class="fas fa-eye"></i></a>
+            </div>
+
+            <div class="related-product">
+                <div class="related-image">
+                    <img src="img/products/f5.jpg" alt="Related Product">
+                    <div class="quick-view">Quick View</div>
+                </div>
+                <div class="related-info">
+                    <span class="brand">Adidas</span>
+                    <h4>Navy Blue Floral Shirt</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4 class="price">$62</h4>
+                </div>
+                <a href="product-detail.html?id=5&name=Navy Blue Floral Shirt&brand=adidas&price=62&img=f5.jpg" class="cart-icon"><i class="fas fa-eye"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="ftlogo" src="img/logo.png" alt="web_logo_footer">
+            <h4>Contact</h4>
+            <p><strong>Address :</strong> Ruhunu Arcade, 13 Mile Post, Wellawaya. </p>
+            <p><strong>Phone :</strong> +94 123 456 789 / +94 55 123 4567 </p>
+            <p><strong>Open Hours :</strong> Monday - Sunday / 9.00 a.m. - 8.00 p.m. </p>
+            <div class="follow">
+                <p><strong>Follow Us</strong></p>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Shop here</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Edit Profile</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store / Google Play Store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="apple pay logo">
+                <img src="img/pay/play.jpg" alt="google pay logo">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="payhere logo">
+        </div>
+    </footer>
+
+    <div class="copyright" style="background-color: #0f9a91; ">
+        <p id="footercopyright">&copy; 2026 Online Web Store. All rights reserved.</p>
+    </div>
+
+<script>
+// Get product details from URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const productName = urlParams.get('name') || 'Classic Cartoon Style Shirt';
+const productBrand = urlParams.get('brand') || 'adidas';
+const productPrice = urlParams.get('price') || '60';
+const productImg = urlParams.get('img') || 'f1.jpg';
+const productId = urlParams.get('id') || '1';
+
+// Update page with product details
+document.getElementById('product-name').textContent = productName;
+document.getElementById('product-brand').textContent = productBrand;
+document.getElementById('product-price').textContent = '$' + productPrice + '.00';
+document.getElementById('original-price').textContent = '$' + (parseFloat(productPrice) + 25).toFixed(2);
+document.getElementById('breadcrumb-product').textContent = productName;
+document.getElementById('product-sku').textContent = 'SKU-' + productId;
+
+// Update main image
+document.getElementById('MainImg').src = 'img/products/' + productImg;
+
+// Update first thumbnail
+const firstThumb = document.querySelector('.thumb-img img');
+if (firstThumb) {
+    firstThumb.src = 'img/products/' + productImg;
+}
+
+// Function to add product to cart from detail page
+function addToCartFromDetail() {
+    const size = document.querySelector('input[name="size"]:checked').value;
+    const color = document.querySelector('input[name="color"]:checked').value;
+    const quantity = document.getElementById('quantity').value;
+    
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    for (let i = 0; i < quantity; i++) {
+        cart.push({
+            name: productName,
+            price: parseFloat(productPrice),
+            brand: productBrand,
+            image: 'img/products/' + productImg,
+            size: size,
+            color: color
+        });
+    }
+    
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("✅ " + quantity + " x " + productName + " added to cart! 🛒\nSize: " + size + "\nColor: " + color);
+}
+</script>
+    
+</body>
+
+</html>

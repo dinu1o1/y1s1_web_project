@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Web Store - Home</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <section id="header">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            
+            <div id="navbar">
+                <ul id="navilist">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <section id="landimg">
+            <h3>Trade-in-offer</h3>
+            <h2>Super Value deals <br>On all products</h2>
+            <p>Save more with coupons & up to 70% off....!</p>
+            <a href="#product-1"><button>Shop Now</button></a>
+        </section>
+
+        <section id="featuers" class="section-p1">
+
+            <div class="fe-box">
+                <img src="img/features/f1.png" alt="">
+                <h5>Free Shipping</h5>
+            </div>
+
+            <div class="fe-box">
+                <img src="img/features/f2.png" alt="">
+                <h5>Order Online</h5>
+            </div>
+
+            <div class="fe-box">
+                <img src="img/features/f3.png" alt="">
+                <h5>Save Money</h5>
+            </div>
+
+            <div class="fe-box">
+                <img src="img/features/f4.png" alt="">
+                <h5>Pay Easy</h5>
+            </div>
+
+            <div class="fe-box">
+                <img src="img/features/f5.png" alt="">
+                <h5>Customer Service</h5>
+            </div>
+
+            <div class="fe-box">
+                <img src="img/features/f6.png" alt="">
+                <h5>24*7 Support</h5>
+            </div>
+
+        </section>
+
+        <section id="product-1" class="section-p1">
+
+            <h3>Featured Products</h3>
+            <p>Summer collection of latest products</p>
+         <div class="together">
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=1&name=Classic Cartoon Style Shirt&brand=adidas&price=60&img=f1.jpg">
+                        <img src="img/products/f1.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Classic Cartoon Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$60</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Classic Cartoon Style Shirt', 60, 'adidas', 'img/products/f1.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=2&name=Classic Floral Style Shirt&brand=tom ford&price=72&img=f2.jpg">
+                        <img src="img/products/f2.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>tom ford</span>
+                        <h5>Classic Floral Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$72</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Classic Floral Style Shirt', 72, 'tom ford', 'img/products/f2.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=3&name=Classic Jungle Style Shirt&brand=hardy boy&price=55&img=f3.jpg">
+                        <img src="img/products/f3.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>hardy boy</span>
+                        <h5>Classic Jungle Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$55</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Classic Jungle Style Shirt', 55, 'hardy boy', 'img/products/f3.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=4&name=Vintage Floral Style Shirt&brand=hugo boss&price=72&img=f4.jpg">
+                        <img src="img/products/f4.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>hugo boss</span>
+                        <h5>Vintage Floral Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$72</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Vintage Floral Style Shirt', 72, 'hugo boss', 'img/products/f4.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=5&name=Navy Blue Floral Shirt&brand=adidas&price=62&img=f5.jpg">
+                        <img src="img/products/f5.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Navy Blue Floral Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$62</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Navy Blue Floral Shirt', 62, 'adidas', 'img/products/f5.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=6&name=Modern Classic T + Shirt&brand=ralph&price=80&img=f6.jpg">
+                        <img src="img/products/f6.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>ralph</span>
+                        <h5>Modern Classic T + Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$80</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Modern Classic T + Shirt', 80, 'ralph', 'img/products/f6.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=7&name=Ladies Summer Pants&brand=mimosa&price=45&img=f7.jpg">
+                        <img src="img/products/f7.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>mimosa</span>
+                        <h5>Ladies Summer Pants</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$45</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Ladies Summer Pants', 45, 'mimosa', 'img/products/f7.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=8&name=Bathic Model Women Blouse&brand=bathic for her&price=50&img=f8.jpg">
+                        <img src="img/products/f8.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>bathic for her</span>
+                        <h5>Bathic Model Women's Blouse</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$50</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Bathic Model Women Blouse', 50, 'bathic for her', 'img/products/f8.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <section id="linebanner">
+            <h4>Unlimited Fashion</h4>
+            <h2>Up to <span>70% Off</span> for all Clothing items.</h2>
+
+
+        </section>
+
+
+        <section id="product-1" class="section-p1">
+
+            <h3 class="newar" >New Arrivals</h3>
+            <p>Summer Collection New Mordern Designs</p>
+         <div class="together">
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=9&name=Old Money Style Shirt&brand=adidas&price=63&img=n1.jpg">
+                        <img src="img/products/n1.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Old Money Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$63</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Old Money Style Shirt', 63, 'adidas', 'img/products/n1.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=10&name=Ash White Classical Shirt&brand=tom ford&price=70&img=n2.jpg">
+                        <img src="img/products/n2.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>tom ford</span>
+                        <h5>Ash & White Classical Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$70</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Ash White Classical Shirt', 70, 'tom ford', 'img/products/n2.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=11&name=Classic Plain White Shirt&brand=hardy boy&price=65&img=n3.jpg">
+                        <img src="img/products/n3.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>hardy boy</span>
+                        <h5>Classic Plain White Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$65</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Classic Plain White Shirt', 65, 'hardy boy', 'img/products/n3.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=12&name=Muddy Cream Style Shirt&brand=hugo boss&price=52&img=n4.jpg">
+                        <img src="img/products/n4.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>hugo boss</span>
+                        <h5>Muddy Cream Style Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$52</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Muddy Cream Style Shirt', 52, 'hugo boss', 'img/products/n4.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=13&name=Navy Blue Denim Shirt&brand=adidas&price=75&img=n5.jpg">
+                        <img src="img/products/n5.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Navy Blue Denim Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Navy Blue Denim Shirt', 75, 'adidas', 'img/products/n5.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=14&name=Classic Striped Shorts&brand=ralph&price=75&img=n6.jpg">
+                        <img src="img/products/n6.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>ralph</span>
+                        <h5>Classic Striped Shorts</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Classic Striped Shorts', 75, 'ralph', 'img/products/n6.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=15&name=Dark Cream Color Shirt&brand=shuits for him&price=45&img=n7.jpg">
+                        <img src="img/products/n7.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>shuits for him</span>
+                        <h5>Dark Cream Color Shirt </h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$45</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Dark Cream Color Shirt', 45, 'shuits for him', 'img/products/n7.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="pro">
+                    <a href="product-detail.html?id=16&name=Dark Black Blue Shirt&brand=emerald&price=65&img=n8.jpg">
+                        <img src="img/products/n8.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>emerald</span>
+                        <h5>Dark Black & Blue Shirt</h5>
+                        <div class="alignraw">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>$65</h4>
+                        </div>
+                    </div>
+                    <a href="#" onclick="addToCart('Dark Black Blue Shirt', 65, 'emerald', 'img/products/n8.jpg'); return false;">
+                        <i class="fas fa-shopping-cart carticon"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+
+          </div>
+        </section>
+
+
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>Crazy Deals</h4>
+                <h2>Buy 1 Get 1 Free</h2>
+                <span>The best classic dress is on sale at cara</span>
+                <a href="shop.html"><button class="white">Shop Now</button></a>
+            </div>
+
+            <div class="banner-box" id="banner-box2" >
+                <h4>Spring/Summer</h4>
+                <h2>Upcoming Season</h2>
+                <span>The best seasonal dress is on sale at cara</span>
+                <a href="shop.html"><button class="white">Shop Now</button></a>
+            </div> 
+        </section>
+
+
+        <section id="banner3">
+
+            <div class="banner-box" >
+                <h4>SEASONAL SALE</h4>
+                <h5>Winter Collection -50% Off</h5>
+            </div> 
+
+            <div class="banner-box banner-box2"  >
+                <h4>OUTRERWEAR COLLECTION</h4>
+                <h5>Dress like a King / Queen</h5>
+            </div> 
+
+            <div class="banner-box banner-box3"  >
+                <h4>TRENDY FASHIONS</h4>
+                <h5>For fashionable youth</h5>
+            </div> 
+
+        </section>
+
+        <section id="newsletter" class="section-p1">
+
+            <div id="txtinfo">
+                <h4>Sign Up for Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+
+            <div id="form">
+                <input type="text" id="email" required>
+                <label for="email">Your email address</label>
+                <button class="normal" onclick="newsletterSignup()">Sign Up</button>
+            </div>
+        </section>
+
+        
+
+
+        <footer class="section-p1">
+
+            <div class="col">
+                <img class="ftlogo" src="img/logo.png" alt="web_logo_footer">
+                <h4>Contact</h4>
+                <p><strong>Address :</strong> Ruhunu Arcade, 13 Mile Post, Wellawaya. </p>
+                <p><strong>Phone :</strong> +94 123 456 789 / +94 55 123 4567 </p>
+                <p><strong>Open Hours :</strong> Monday - Sunday / 9.00 a.m. - 8.00 p.m. </p>
+                
+
+                    <div class="follow">
+                        <p><strong>Follow Us</strong></p>
+                        <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube    "></i>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div class="col">
+                <h4>Details</h4>
+                <a href="about.html">About us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="shop.html">Shop here</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="cart.html">My WishList</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="col install">
+
+                <h4>Install App</h4>
+                <p>From App Store / Google Play Store</p>
+
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="apple pay logo">
+                    <img src="img/pay/play.jpg" alt="google pay logo">
+                </div>
+
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="payhere logo">
+
+            </div>
+
+        </footer>
+
+        <div class="copyright">
+                <p id="footercopyright">&copy; 2026 Online Web Store. All rights reserved.</p>
+        </div>
+
+
+<script>
+
+// Add to Cart Function
+function addToCart(name, price, brand, image) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({
+        name: name,
+        price: price,
+        brand: brand,
+        image: image
+    });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("✅ " + name + " added to cart! 🛒");
+}
+// Newsletter Signup Function
+function newsletterSignup() {
+        // Get the email input value
+        const emailInput = document.getElementById("email");
+        
+        // Simple check to ensure the field isn't empty
+        if (emailInput.value.trim() === "") {
+            alert("Please enter your email address first.");
+            return;
+        }
+
+        // The message you requested
+        alert("Thanks for subscribing our newsletter\nCheck out our daily mails and weekly offors for get a good chance !");
+        
+        // Clear the input field after signing up
+        emailInput.value = "";
+    }
+</script>
+
+    </body>
+
+</html>
