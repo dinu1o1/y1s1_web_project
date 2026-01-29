@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Specific Styles for Shop Page Header */
+        /*Styles for Shop Page Header */
         #page-header {
-            background-image: url("img/banner/b1.jpg"); /* You can change this image */
+            background-image: url("img/banner/b1.jpg"); 
             width: 100%;
             height: 40vh;
             background-size: cover;
@@ -70,7 +70,7 @@
     </section>
 
     <section id="page-header">
-        <h2>#stayhome</h2>
+        <h2>#Shop_with_Us</h2>
         <p>Save more with coupons & up to 70% off!</p>
     </section>
 
@@ -482,16 +482,19 @@
         <a href="#"><i class="fas fa-arrow-right"></i></a>
     </section>
 
-    <section id="newsletter" class="section-p1" class="section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal" onclick="newsletterSignup()">Sign Up</button>
-        </div>
-    </section>
+    <section id="newsletter" class="section-p1">
+
+            <div id="txtinfo">
+                <h4>Sign Up for Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+
+            <div id="form">
+                <input type="text" id="email" required>
+                <label for="email">Your email address</label>
+                <button class="normal" onclick="newsletterSignup()">Sign Up</button>
+            </div>
+        </section>
 
     <footer class="section-p1">
         <div class="col">
