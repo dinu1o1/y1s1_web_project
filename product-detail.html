@@ -17,11 +17,12 @@
             
             <div id="navbar">
                 <ul id="navilist">
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a href="shop.html ">Shop</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Log in / Sign up</a></li>
+                    <li id="lg-link"><a href="login.html">Login</a></li>
+                    <li id="pr-link" style="display: none;"><a href="myprofile.html"><i class="fas fa-user"></i></a></li>
                     <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
@@ -376,6 +377,22 @@ function addToCartFromDetail() {
     localStorage.setItem("cart", JSON.stringify(cart));
     alert("✅ " + quantity + " x " + productName + " added to cart! 🛒\nSize: " + size + "\nColor: " + color);
 }
+function updateNav() {
+    const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+    const loginLink = document.getElementById("lg-link");
+    const profileLink = document.getElementById("pr-link");
+
+    if (isLoggedIn === "true") {
+        if (loginLink) loginLink.style.display = "none";
+        if (profileLink) profileLink.style.display = "block";
+    } else {
+        if (loginLink) loginLink.style.display = "block";
+        if (profileLink) profileLink.style.display = "none";
+    }
+}
+
+// Run the function when the page loads
+window.onload = updateNav;
 </script>
     
 </body>
